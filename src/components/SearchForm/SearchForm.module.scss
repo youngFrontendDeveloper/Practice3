@@ -1,0 +1,63 @@
+@use "../../styles/variables" as variable;
+
+.form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  background-color: variable.$white-color;
+  border: 1px solid variable.$border-color;
+}
+
+.form__title {
+  width: 200px;
+  margin-bottom: 5px;
+  color: variable.$label-color;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+
+  @media screen and (min-width: variable.$width-md) {
+    width: 300px;
+  }
+}
+
+.form__input {
+  width: 100%;
+  padding: 7px;
+  font-size: 18px;
+  border: 1px solid variable.$border-color;
+  outline-color: variable.$border-color;
+
+  &::placeholder {
+    color: variable.$placeholder-color;
+    font-family: var(--secondary-text-font);
+    font-size: 16px;
+  }
+}
+
+.form__warning {
+  margin-top: -7px;
+  margin-bottom: 10px;
+}
+
+.form__btn {
+  width: 100%;
+  max-width: 300px;
+  padding: 7px;
+  font-size: 18px;
+  border: 1px solid #000;
+  background-color: variable.$button-bg-color;
+
+  &:hover {
+    box-shadow: 0 0 5px 0 variable.$shadow-color;
+    cursor: pointer;
+  }
+}

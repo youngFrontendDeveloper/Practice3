@@ -1,0 +1,19 @@
+@use "../styles/variables" as variable;
+
+.home {
+  height: 90vh;
+  padding: 30px 20px;
+}
+
+.home__title {
+  width: 90%;
+  margin: 0 auto 70px;
+  color: variable.$title-color;
+  text-align: center;
+  font-family: var(--title-font);
+}
+
+.home__btn {
+  max-width: 300px;
+
+}
